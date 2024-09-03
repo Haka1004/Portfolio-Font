@@ -1,0 +1,31 @@
+<div class="popup" data-language="popup">
+	<div class="popup__content">
+		<button class="popup__button">X</button>
+		<h4 class="popup__title" data-lang="popup-title">Feel free to text me ;)</h4>
+		<form action="https://api.web3forms.com/submit" class="form" method="POST">
+			<input type="hidden" name="access_key" value="9a28543c-a391-4156-a553-2bbc2255955c" />
+			<label class="form__label">
+				<input type="text" name="name" class="input-reset form__input popup__input_name" placeholder="Name"
+					data-lang="placeholder-name" />
+			</label>
+			<label class="form__label">
+				<input type="email" name="name" class="input-reset form__input popup__input_email" placeholder="Email"
+					data-lang="placeholder-email" />
+			</label>
+			<label class="form__label">
+				<input type="tel" name="name" class="input-reset form__input popup__input_phone" placeholder="Phone"
+					data-lang="placeholder-phone" />
+			</label>
+			<textarea class="form__textarea popup__input_message" type="text" name="message" placeholder="Message" id=""
+				data-lang="placeholder-message"></textarea>
+
+			<!-- Honeypot Spam Protection -->
+			<input type="checkbox" name="botcheck" class="hidden" style="display: none" />
+
+			<!-- Custom Confirmation / Success Page -->
+			<input type="hidden" name="redirect" value="http://localhost:3000/" />
+
+			<button class="button-reset form__button popup__input_send" data-lang="popup-button"></button>
+		</form>
+	</div>
+</div>

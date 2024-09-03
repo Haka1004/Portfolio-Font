@@ -1,0 +1,32 @@
+.language {
+	text-orientation: mixed;
+	writing-mode: vertical-rl;
+	transform: rotate(180deg);
+	// .language__button
+
+	&__button {
+		color: var(--light-color);
+		transition: transform 0.3s, color 0.3s;
+		font-size: inherit;
+
+		&:hover {
+			transform: scale(1.2);
+			color: var(--main-color);
+		}
+
+		&_active {
+			transform: scale(1.2);
+			color: var(--main-color);
+		}
+
+		// .language__button_ru
+
+		&_ru {
+		}
+
+		// .language__button_en
+
+		&_en {
+		}
+	}
+}

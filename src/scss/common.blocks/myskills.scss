@@ -1,0 +1,85 @@
+// .skills {
+
+// 	// .skills__container
+
+// 	&__container {
+// 		padding: 65px 10px 80px;
+//    text-align: center;
+// 	}
+
+// 	// .skills__content
+
+// 	&__content {
+// 	}
+
+// 	// .skills__title
+
+// 	&__title {
+// 		font-size: 34px;
+//     margin-bottom: 10px;
+// 	}
+
+// 	// .skills__descr
+
+// 	&__descr {
+// 		padding: 30px 0 60px;
+//     font-size: 18px;
+//     color: var(--black);
+// 	}
+
+// 	// .skills__wrapper
+
+// 	&__wrapper {
+// 		display: flex;
+// 		flex-direction: column;
+//     justify-content: space-between;
+// 		gap: 65px;
+
+// 	@media(min-width: 576px){
+// 		flex-direction: row;
+//     align-items: center;
+// 	}
+// 	@media(min-width:768px){
+// 		flex-direction: row;
+//     align-items: center;
+// 	}
+// 	}
+// }
+
+// .container {
+// }
+
+// .skill {
+// 	text-align: center;
+// }
+
+// .icon img{
+// 	width: 90px;
+// 	height: 70px;
+// 	margin-bottom: 18px;
+// }
+
+// .skill:nth-child(4) .icon img {
+// 	width: 60px;
+// }
+
+// .details h3{
+// 	font-size: 14px;
+// 	color: #828282;
+// 	width: 90px;
+// 	margin: auto;
+// }
+
+// .skill:nth-child(4) .details h3 {
+// 	width: 90px;
+// 	margin-bottom: 20px;
+// }
+
+// .rating {
+// 	margin-top: 15px;
+// 	margin: auto;
+// }
+
+// .star {
+// 	font-size: 35px;
+// }

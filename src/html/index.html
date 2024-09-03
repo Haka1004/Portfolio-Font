@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html class="page" lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/index.min.css">
+	<title>Document</title>
+</head>
+<style>
+	.loading {
+		position: fixed;
+		inset: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		z-index: 9999;
+		background-color: rgb(0, 0, 0, 0.5);
+	}
+
+
+	.loading__spinner {
+		width: 84px;
+		height: 84px;
+		position: relative;
+	}
+
+	.loading__spinner:before,
+	.loading__spinner:after {
+		content: "";
+		position: absolute;
+		left: 50%;
+		bottom: 0;
+		width: 64px;
+		height: 64px;
+		border-radius: 50%;
+		background: #FFF;
+		transform: translate(-50%, -100%) scale(0);
+		animation: push 2s infinite linear;
+	}
+
+	.loading__spinner:after {
+		animation-delay: 1s;
+	}
+
+	@keyframes push {
+
+		0%,
+		50% {
+			transform: translate(-50%, 0%) scale(1)
+		}
+
+		100% {
+			transform: translate(-50%, -100%) scale(0)
+		}
+	}
+</style>
+
+<body class="page__body">
+	@include('./common.blocks/header.html')
+	<main class="main">
+		<div class="loading">
+			<span class="loading__spinner" style="font-size: 36px;"></span>
+		</div>
+		<h1 class="visually-hidden">portfolio Denis Novik</h1>
+		@include('./common.blocks/hero.html')
+		@include('./common.blocks/about.html')
+		@include('./common.blocks/myskills.html')
+		@include('./common.blocks/skills.html')
+		@include('./common.blocks/portfolio.html')
+
+	</main>
+	@include('./common.blocks/footer.html')
+	@include('./common.blocks/popup.html')
+
+	<script src="js/index.min.js"></script>
+</body>
+
+</html>
