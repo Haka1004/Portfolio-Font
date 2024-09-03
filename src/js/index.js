@@ -6,24 +6,9 @@
 
 import "./language/index.js";
 
-const url = "http://localhost:1337";
 
-// async function fetchProducts(url) {
-// 	return url
+export const loading = document.querySelector('.loading')
 
-// }
-
-const loading = document.querySelector('.loading')
-
-fetch(url + "/api/hero?populate=*")
-	.then((res) => res.json())
-	.then((data) => {
-		console.log(data)
-	})
-	.catch((error) => console.warn(error))
-	.finally(() => {
-		loading.remove()
-	})
 
 
 

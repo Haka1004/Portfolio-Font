@@ -1,4 +1,5 @@
 import { langList } from "./langList.js";
+import { loading } from "../index.js";
 
 const buttonRu = document.querySelectorAll(".language__button_ru");
 const buttonEn = document.querySelectorAll(".language__button_en");
@@ -124,10 +125,10 @@ function changeLanguage(lang) {
 								console.error('senc ban chka exbayr');
 						}
 					})
-
-
-					.catch((error) => console.warn(error));
-
+					.catch((error) => console.warn(error))
+					.finally(() => {
+						loading.remove()
+					})
 
 				observer.unobserve(entry.target);
 
